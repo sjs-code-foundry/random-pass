@@ -1,0 +1,154 @@
+body {
+    background-color: #1F2937;
+    width: 446px;
+}
+
+hr {
+    border: 1px solid #2F3E53;
+    margin: 8px 52px 8px 52px;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -0.025em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    color: #D5D4D8;
+}
+
+.greenText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #4ADF86;
+}
+
+.genField {
+    background-color: #273549;
+    color: #55F991;
+    text-align: center;
+    font-size: 10px;
+    line-height: 39px;
+    margin: 18px 52px 0 52px;
+    height: 39px;
+    border: none;
+    border-radius: 6px;
+}
+
+#background {
+    background-color: #1F2937;
+
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 62px;
+    top: 64px;
+}
+
+#generate {
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 446px;
+    height: 42px;
+    padding: 9px 17px 9px 15px;
+    margin: 12px 52px 0 52px;
+    font-weight: bold;
+}
+
+#interactive-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#light-dark {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    margin: 120px 52px 0 56px;
+}
+
+#options-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 100%;
+    color: #D5D4D8;
+    margin: 0 128px 0 0;
+}
+
+#pass-length {
+    width: 128px;
+    height: 30px;
+    margin: 0 0 0 52px;
+    border: none;
+    border-radius: 6px;
+    background-color: #10B981;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#title-line {
+    display: flex;
+}
+
+#title {
+    width: 354px;
+    margin: 115px 0 0 52px;
+}
+
+#subtitle {
+    width: 372px;
+    margin: 10px 0 26px 52px;
+}
+
+#results-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Editing Borders */
+/*
+#background {
+    border: 1px solid red;
+}
+
+#title-area {
+    border: 1px solid red;
+}
+
+#interactive-area {
+    border: 1px solid red;
+}
+
+#options-area {
+    border: 1px solid red;
+}
+
+#results-area {
+    border: 1px solid red;
+}
+
+#light-dark {
+    border: 1px solid red;
+}
