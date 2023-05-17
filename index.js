@@ -1,5 +1,4 @@
 // Constants
-
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -17,6 +16,7 @@ let oaColor = document.getElementById('options-area')
 let passOne = document.getElementById('gen1')
 let passTwo = document.getElementById('gen2')
 let passLength = document.getElementById('pass-length')
+let limitLabel = document.getElementById('limit-label')
 
 
 const paletteLight = ["#ECFDF5","#2B283A","#6B7280"] // [background,title text,subtitle text]
@@ -32,6 +32,7 @@ function lightDark() {
         subColor.style.color = paletteDark[2]
         oaColor.style.color = paletteDark[2]
         ldColor.style.backgroundColor = paletteLight[0]
+        limitLabel.style.color = paletteDark[2]
     } else {
         bodyColor.style.backgroundColor = paletteLight[0]
         bodyColor.style.color = paletteLight[1]
@@ -40,6 +41,7 @@ function lightDark() {
         subColor.style.color = paletteLight[2]
         oaColor.style.color = paletteLight[2]
         ldColor.style.backgroundColor = paletteDark[0]
+        limitLabel.style.color = paletteLight[2]
     }
 }
 
@@ -109,3 +111,11 @@ function copyToClipboard(field) {
         alert("2nd Password copied to clipboard: " + passTwo.textContent)
     }
 }
+
+function setLimitLabel() {
+    let pMax = parseInt(passLength.max)
+    let pMin = parseInt(passLength.min)
+    limitLabel.textContent = "(" + pMin + "-" + pMax + ")"
+}
+
+setLimitLabel() // Automatically adjust label to HTML defined limits.

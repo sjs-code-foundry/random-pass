@@ -83,6 +83,12 @@ h3 {
     margin: 120px 52px 0 56px;
 }
 
+#limit-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #D5D4D8;
+}
+
 #options-area {
     display: flex;
     flex-direction: column;
@@ -97,7 +103,7 @@ h3 {
 }
 
 #pass-length {
-    width: 128px;
+    width: 96px;
     height: 30px;
     margin: 0 0 0 52px;
     border: none;
